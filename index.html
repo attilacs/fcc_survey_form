@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freecodecamp - Survey Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <header>
-            <h1 id="title">Survey Form</h1>
-            <p id="description">Description text</p>
-        </header>
-        <form id="survey-form">
-            <div class="form-group">
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
-            </div>
-            <div class="form-group">
-                <label for="number" id="number-label">Age (optional)</label>
-                <input type="number" name="age" id="number" min="18" max="99" placeholder="Age">
-            </div>
-            <div class="form-group">
-                <label for="dropdown">Select an option</label>
-                <select name="option" id="dropdown" required>
-                    <option disabled selected value="">Select an option</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Gender:</label>
-                <div class="input-group">
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="male">Male</label>
-                </div>
-                <div class="input-group">
-                    <input type="radio" name="gender" id="female" value="female">
-                    <label for="female">Female</label>
-                </div>
-                <div class="input-group">
-                    <input type="radio" name="gender" id="other" value="other" checked>
-                    <label for="other">Other</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Checkbox:</label>
-                <div class="input-group">
-                    <input type="checkbox" name="checkbox1" value="lorem" id="lorem">
-                    <label for="lorem">Lorem</label>
-                </div>
-                <div class="input-group">
-                    <input type="checkbox" name="checkbox2" value="ipsum" id="ipsum">
-                    <label for="ipsum">Ipsum</label>
-                </div>
-                <div class="input-group">
-                    <input type="checkbox" name="checkbox3" value="dolor" id="dolor">
-                    <label for="dolor">Dolor</label>
-                </div>
-                <div class="input-group">
-                    <input type="checkbox" name="checkbox4" value="sit" id="sit">
-                    <label for="sit">Sit</label>
-                </div>
-                <div class="input-group">
-                    <input type="checkbox" name="checkbox5" value="amet" id="amet">
-                    <label for="amet">Amet</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="comment">Comment</label>
-                <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Description text</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            autofocus
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Select an option</label>
+          <select name="option" id="dropdown" required>
+            <option disabled selected value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Radio Buttons:</label>
+          <div class="input-group">
+            <input type="radio" name="radio" id="option1" value="option1" />
+            <label for="option1">Option 1</label>
+          </div>
+          <div class="input-group">
+            <input type="radio" name="radio" id="option2" value="option2" />
+            <label for="option2">Option 2</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="radio"
+              name="radio"
+              id="option3"
+              value="option3"
+              checked
+            />
+            <label for="option3">Option 3</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Checkbox:</label>
+          <div class="input-group">
+            <input type="checkbox" name="checkbox1" value="lorem" id="lorem" />
+            <label for="lorem">Lorem</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="checkbox2" value="ipsum" id="ipsum" />
+            <label for="ipsum">Ipsum</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="checkbox3" value="dolor" id="dolor" />
+            <label for="dolor">Dolor</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="checkbox4" value="sit" id="sit" />
+            <label for="sit">Sit</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="checkbox5" value="amet" id="amet" />
+            <label for="amet">Amet</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
     </main>
-</body>
-
+  </body>
 </html>
